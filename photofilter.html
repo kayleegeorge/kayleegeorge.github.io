@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit My Face!</title>
+	<style>
+		body {
+			background: rgb(250,250,250);
+		}
+		.edits {
+			font-family: sans-serif;
+			font-weight: 300;
+			float: left;
+			text-align: center;
+			padding-left: 150px;
+			padding-top:100px;
+			margin-left:10%;
+		}
+		.nav {
+		border-bottom: 1px solid #EFEFEF;
+		padding: 5px 15px;
+		position: fixed;
+		background: #FFF;
+		margin-top: 40px;
+		margin-left: 28%;
+		margin-right: 28%;
+		border: lightblue solid 1px;
+		}
+		.name {
+		font-family: Courier;
+		text-shadow: 2px 1px lightblue;
+		font-size: 15px;
+		position:absolute;
+		color:black;
+		margin-top: 10px;
+		margin-left: 43.5%;
+		text-align: center;
+	}
+	.nav-item {
+		font-size: 16px; 
+		font-family: Courier;
+		padding: 8px 20px 8px 20px;
+		cursor: pointer;
+		display: inline;
+		text-decoration: none;
+		color: black;
+	}
+	.nav-item:hover {
+		background: lightblue;
+		color:#FFF;
+	}
+
+		button {
+			font-family: Courier;
+			font-weight: 300;
+			font-size: 14px;
+			margin: 0px 5px;
+			border: 1px solid #333;
+			outline: none;
+			background: #FFF;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: 0.2s;
+			text-decoration: none;
+		}
+		.pressbutton {
+			font-family: Courier;
+			font-weight: 300;
+			font-size: 14px;
+			margin: 0px 5px;
+			border: 1px solid #333;
+			outline: none;
+			background: lightblue;
+			display: inline;
+			width: auto;
+			border-radius: 3px;
+			cursor: pointer;
+			transition: 0.2s;
+			padding: 3px;
+		}
+		.pressbutton:hover {
+			box-shadow: 0 2px 4px 0 rgba(0,0,0,.24);
+		}
+		h1 {
+			font-family: Courier;
+			text-align: center;
+			position: relative;
+		}
+
+		button:hover {
+			box-shadow: 0 2px 4px 0 rgba(0,0,0,.24);
+		}
+
+		img {
+			max-width: 400px;
+			float: right;
+			padding-right: 170px;
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function getPhoto() {
+			var imgUrl = document.getElementById("imageUrl").value
+			var image = document.createElement("img")
+			image.setAttribute("src", imgUrl)
+			image.setAttribute("id", "photo")
+
+			var container = document.getElementById("imageContainer")
+			container.appendChild(image)
+		}
+
+		function update() {
+			let photo = document.getElementById("photo")
+			let blurVal = document.getElementById("blurSlider").value
+			let brightnessVal = document.getElementById("brightnessSlider").value
+			let contrastVal = document.getElementById("contrastSlider").value
+			let greyVal = document.getElementById("greySlider").value
+			let invertVal = document.getElementById("inversionSlider").value
+			let hueVal = document.getElementById("hueSlider").value
+			let sepiaVal = document.getElementById("sepiaSlider").value
+			photo.style.filter = "blur(" + blurVal + "px) brightness(" + brightnessVal + "%) contrast(" + contrastVal + "%) grayscale(" + greyVal + "%) invert(" + invertVal + "%) hue-rotate(" + hueVal + "deg) sepia(" + sepiaVal + "%)"
+		}
+
+
+		function filterHudson() {
+			let photo = document.getElementById("photo")
+			photo.style.filter = "contrast(90%) brightness(120%) saturate(110%) hue-rotate(0deg) sepia(0%)"
+		}
+
+		function filterAden() {
+			let photo = document.getElementById("photo")
+			photo.style.filter = "contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg) sepia (0%)"
+		}
+
+		function filterReyes() {
+			let photo = document.getElementById("photo")
+			photo.style.filter = "contrast(85%) brightness(110%) saturate(75%) hue-rotate(0deg) sepia(22%)"
+		}
+
+		function reset() {
+			let photo = document.getElementById("photo")
+			photo.style.filter = "contrast(100%) brightness(100%) saturate(100%) hue-rotate(0deg) sepia(0%)"
+		}
+
+	</script>
+	<div class="name"> [ Kaylee George ]</div>
+	<div class = "nav">
+		<a href="personalweb.html" target="_blank"  class = "nav-item">Home</a>
+		<div class = "nav-item">Experience</div>
+		<div class = "nav-item">Projects</div>
+		<div class = "nav-item">Fun Facts</div>
+		<div class = "nav-item">Contact</div>
+	</div> <br><br><br><br>
+	<h1>Edit My Face!</h1>
+	<div class = "edits">
+		URL of photo: <input type="text" id="imageUrl" value="KayleeGeorge.jpg">
+		<div class = "pressbutton" onclick="getPhoto()">Press Me</div>
+		<br><br>
+		Blur: <input id="blurSlider" type="range" min="0" max="10" value="0" oninput="update()">
+		<br>
+		Brightness: <input id="brightnessSlider" type="range" min="0" max="200" value="100" oninput="update()">
+		<br>
+		Contrast: <input id="contrastSlider" type="range" min="0" max="200" value="100" oninput="update()">
+		<br>
+		Greyscale: <input id="greySlider" type="range" min="0" max="100" value="0" oninput="update()">
+		<br>
+		Hue Rotation: <input id="hueSlider" type="range" min="0" max="360" value="0" oninput="update()">
+		<br>
+		Inversion: <input id="inversionSlider" type="range" min="0" max="100" value="0" oninput="update()">
+		<br>
+		Sepia: <input id="sepiaSlider" type="range" min="0" max="100" value="0" oninput="update()">
+		<br><br>
+		Filters: 
+		<button onclick="filterHudson()">Hudson</button>
+		<button onclick="filterAden()">Aden</button>
+		<button onclick="filterReyes()">Reyes</button>
+		<button onclick="reset()">Reset</button>
+	</div>
+	<div id="imageContainer"></div>
+</body>
+</html>
