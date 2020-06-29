@@ -33,7 +33,7 @@
 		border: lightblue solid 1px;
 
 		}
-	.nav-item {
+	nav-item {
 		font-size: 16px; 
 		font-family: Courier;
 		padding: 8px 20px 8px 20px;
@@ -42,12 +42,12 @@
 		display: inline;
 		color:black;
 	}
-	.nav-item:hover {
+	nav-item:hover {
 		background: lightblue;
 		color:#FFF;
 	}
 
-	.underbutton {
+	underbutton {
 		background-color:white;
 		color: grey;
 		text-align: center;
@@ -75,14 +75,14 @@
 		margin-left: 43.5%;
 		text-align: center;
 	}
-	.underbutton:hover {
+	underbutton:hover {
 		background-color:lightblue;
 		color:#FFF;
 		cursor:pointer;
 		border: lightblue solid 1px;
 
 	}
-	.maintext {
+	maintext {
 		padding-left: 150px;
 		padding-top:50px;
 		margin-top: 200px;
@@ -92,7 +92,7 @@
 		text-align: center;
 		
 	}
-	.box{
+	box{
 		height:460px;
 		background-color:lightblue;
 		position:relative;
@@ -107,7 +107,7 @@
   		animation-fill-mode: both;
 	}
 
-	.p1{
+	p1{
 		font-family: sans-serif;
 		text-align:center;
 		font-size: 16px;
@@ -119,7 +119,7 @@
 		float:left;
 	}
 
-	.namebox {
+	namebox {
 		height:70px;
 		background-color:lightblue;
 		position:relative;
