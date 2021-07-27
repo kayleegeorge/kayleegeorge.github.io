@@ -1,4 +1,4 @@
-
+***
 Howdy! Welcome to my site 👋 
 
 ### Boring Facts
@@ -13,6 +13,7 @@ Howdy! Welcome to my site 👋
 * I love food. Good food with good company is a good pairing.
 * I dance on Alliance, a Stanford hip-hop team.
 
-***
-
-> Contact me at krgeorge [at] stanford [dot] edu
+[LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
+```
+Contact me at krgeorge [at] stanford [dot] edu
+```
