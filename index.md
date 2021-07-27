@@ -12,4 +12,6 @@ Howdy! Welcome to my site 👋
 * I love food. Good food with good company is a good pairing.
 * I dance on Alliance, a Stanford hip-hop team.
 
+***
+
 > Contact me at krgeorge [at] stanford [dot] edu
