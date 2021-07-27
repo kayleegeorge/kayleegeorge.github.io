@@ -7,7 +7,7 @@ Howdy! Welcome to my site 👋
 * Born and raised in the California Bay Area.
 
 ### Fun-ish Facts
-* Coffee addict. Favorite drink is Philtered Soul Cold Bew at Philz.
+* Coffee addict. Favorite drink is Philtered Soul Cold Brew at Philz.
 * Love the outdoors. Hit me up with backpacking or camping recs.
 * Currently reading Sapiens (highly recommend).
 * I love food. Good food with good company is a good pairing.
