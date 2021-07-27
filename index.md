@@ -7,4 +7,4 @@ I'm a Symbolic Systems major at Stanford University. I've been a product manager
 * Favorite artist is Still Woozy.
 * If you don't like pineapple on pizza, then you're wrong.
 
-Contact me at krgeorge [at] stanford [dot] edu
+> Contact me at krgeorge [at] stanford [dot] edu
