@@ -1,11 +1,17 @@
-I'm a Symbolic Systems major at Stanford University. I've been a product manager intern at DreamBox Learning, Tesla, and Microsoft. I spend a lot of time deciding being indecisive at restaurants and thinking about the future.
+Howdy! Welcome to my site 👋 
 
-#### Quick Facts
+### Boring Facts
+* Symbolic Systems major at Stanford University.
+* Product Manager intern at DreamBox Learning, Tesla, Microsoft.
+* Born and raised in the California Bay Area.
+
+### Fun-ish Facts
 * Coffee addict. Favorite drink is Philtered Soul Cold Bew at Philz.
-* Love the outdoors. Hit me up with backpacking or camping recommendations.
-* Currently reading Sapiens.
+* Love the outdoors. Hit me up with backpacking or camping recs.
+* Currently reading Sapiens (highly recommend).
 * I love food. Good food with good company is a good pairing.
-* Favorite artist is Still Woozy.
-* If you don't like pineapple on pizza, then you're wrong.
+* I dance on Alliance, a Stanford hip-hop team.
+
+### Experience
 
 > Contact me at krgeorge [at] stanford [dot] edu
