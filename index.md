@@ -1,4 +1,4 @@
-I'm a Symbolic Systems major at Stanford University. I've been a product manager intern at DreamBox Learning, Tesla, and Microsoft.
+I'm a Symbolic Systems major at Stanford University. I've been a product manager intern at DreamBox Learning, Tesla, and Microsoft. I spend a lot of time deciding being indecisive at restaurants and thinking about the future.
 
 #### Quick Facts
 * Coffee addict. Favorite drink is Philtered Soul Cold Bew at Philz.
