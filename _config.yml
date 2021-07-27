@@ -1,7 +1,4 @@
 theme: jekyll-theme-minimal
-plugins:
-- jekyll-remote-theme
 logo: assets/KayleeGeorge.jpg
 title: Kaylee George
-description: A site about Kaylee George
 
