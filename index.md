@@ -19,3 +19,7 @@ Contact me at krgeorge [at] stanford [dot] edu
 [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/) | [Facebook](https://www.facebook.com/kaylee.george.940)
 
 ***
+
+### Blog Posts
+_i'm working on it_
+[PM Resources] (/PMpost.md)
