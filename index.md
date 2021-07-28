@@ -21,6 +21,6 @@ Contact me at krgeorge [at] stanford [dot] edu
 ***
 
 ### Blog Posts
-[Kaylee's Recs for PM Resources](./PMpost.html)
+[Kaylee's Recs for PM Resources](./PMpost.md)
 
 [Why SymSys?](https://stanfordwics.medium.com/choosing-symbolic-systems-vs-computer-science-at-stanford-e7226b54f93b)
