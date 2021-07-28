@@ -21,4 +21,4 @@ Contact me at krgeorge [at] stanford [dot] edu
 ***
 
 ### Blog Posts
-[PM Resources](./PMpost.html)
+[Kaylee's Recs for PM Resources](./PMpost.html)
