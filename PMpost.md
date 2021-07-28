@@ -7,7 +7,7 @@ _Cuz you know, I'm an influencer or whateva_ 🤪
 #### PM interviews
 * [Hadar's product interviewing toolkit](https://coda.io/@hadardor/hadars-product-interviewing-toolkit)
 * [Pre-interview product research](https://productmanagerhq.com/product-manager-interview-pre-interview-research/)
-* [Practice quesitons](https://thepminterview.com/)
+* [Practice questions](https://thepminterview.com/)
 
 #### How to be a good PM
 * [PM Handbook](https://www.notion.so/PM-Handbook-7a17a9126f6b4961ba1766cff4fefb2c)
@@ -34,3 +34,5 @@ Practice interview questions. Examples:
 During interviews: take time to think through questions thoughtfully, ask clarifying questions, and make sure to be communicating your thoughts with your interviewer throughout!
 
 Use PM-y language on your resume. Some people say to make a custom resume for each role you apply to and it sounds like a good idea but I'm too lazy for that.
+
+Be generally curious about things. Listen to podcasts to learn about new trends or phenomenons. Be critical of products you use and think about how you can improve them. It'll help you in ideation, product sense, and strategy. 
