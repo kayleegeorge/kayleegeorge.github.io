@@ -19,8 +19,3 @@ Contact me at krgeorge [at] stanford [dot] edu
 [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/) | [Facebook](https://www.facebook.com/kaylee.george.940)
 
 ***
-
-### Blog Posts
-[Kaylee's Recs for PM Resources](./PMpost.md)
-
-[Why SymSys?](https://stanfordwics.medium.com/choosing-symbolic-systems-vs-computer-science-at-stanford-e7226b54f93b)
