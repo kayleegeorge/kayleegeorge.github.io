@@ -21,5 +21,4 @@ Contact me at krgeorge [at] stanford [dot] edu
 ***
 
 ### Blog Posts
-_i'm working on it_
 [PM Resources](./PMpost.html)
