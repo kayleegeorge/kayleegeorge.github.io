@@ -24,6 +24,7 @@ _Cuz you know, I'm an influencer or whateva_ 🤪
 * [Good PM vs. great PM](https://medium.com/the-modern-product-manager/good-product-manager-great-product-manager-335fc22517e7)
 
 
+
 ### My Personal Advice
 Before interviews, take some time to prep notes with: 
 - Research on the company: some products you find cool and why (and maybe some notes about ideas on how to improve them), any cool recent news, any company-soecific technology they use (like Azure for Microsoft), etc.
