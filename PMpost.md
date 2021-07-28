@@ -3,7 +3,7 @@ _Cuz you know, I'm an influencer or whateva_ 🤪
 ***
 
 ### Helpful Articles/Resources
-* [Collection of PM stuff by Hadar Dor](https://www.hadardor.com/pm).
+* [Collection of PM stuff by Hadar Dor](https://www.hadardor.com/pm)
 
 #### PM interviews
 * [Hadar's product interviewing toolkit](https://coda.io/@hadardor/hadars-product-interviewing-toolkit)
