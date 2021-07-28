@@ -1,6 +1,11 @@
+---
+layout: default
+---
+
 ## PM Resources
 _Cuz you know, I'm an influencer or whateva_ 🤪
-***
+
+* * *
 
 ### Helpful Articles/Resources
 * [Collection of PM stuff by Hadar Dor](https://www.hadardor.com/pm)
