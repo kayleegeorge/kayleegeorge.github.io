@@ -36,4 +36,6 @@ During interviews: take time to think through questions thoughtfully, ask clarif
 
 Use PM-y language on your resume. Some people say to make a custom resume for each role you apply to and it sounds like a good idea but I'm too lazy for that.
 
-Be generally curious about things. Listen to podcasts to learn about new trends or phenomenons. Be critical of products you use and think about how you can improve them. It'll help you in ideation, product sense, and strategy. 
+Be generally curious about things. Listen to podcasts to learn about new trends or phenomenons. Be critical of products you use and think about how you can improve them. This mindset will help you in ideation, product sense, and strategy. 
+
+Learn how to communicate clearly and concisely. Your manager will be impressed if you can write great documentation by conveying a compelling story (how did you reach this conclusion? why X over Y? etc.). Know what requires a meeting vs. an email. Leading meetings effectively is also a valuable skill. 
