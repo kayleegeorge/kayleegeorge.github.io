@@ -2,7 +2,7 @@
 layout: post
 ---
 
-I want to get back into writing a bit more.
+Trying to get back into writing a bit more. 
 
 [PM resources by yours truly](./blog/PMpost.html)
 
