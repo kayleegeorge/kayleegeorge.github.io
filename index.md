@@ -3,8 +3,7 @@ Howdy! Welcome to my site 👋
 
 ### Boring Facts
 * Symbolic Systems major at Stanford University.
-* Product Manager intern at DreamBox Learning, Tesla, Microsoft.
-* Born and raised in the California Bay Area.
+* Kinda into PM.
 
 ### Fun-ish Facts
 * Coffee addict. Favorite drink is Philtered Soul Cold Brew at Philz.
@@ -12,6 +11,7 @@ Howdy! Welcome to my site 👋
 * Currently reading Sapiens (highly recommend).
 * I love food. Good food with good company is a good pairing.
 * I dance on Alliance, a Stanford hip-hop team.
+* I like chalky hands.
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
