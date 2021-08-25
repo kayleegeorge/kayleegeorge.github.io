@@ -11,11 +11,11 @@ Howdy! Welcome to my site 👋
 * Currently reading Sapiens (highly recommend).
 * I love food. Good food with good company is a good pairing.
 * I dance on Alliance, a Stanford hip-hop team.
-* I like chalky hands.
+* I like chalky hands and Levi Ackerman.
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
 ```
-[LinkedIn](https://www.linkedin.com/in/kayleegeorge8/) | [Facebook](https://www.facebook.com/kaylee.george.940)
+[LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
 
 ***
