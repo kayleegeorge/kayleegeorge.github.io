@@ -27,7 +27,7 @@ _Cuz you know, I'm an influencer or whateva_ 🤪
 
 ### My Personal Advice
 Before interviews, take some time to prep notes with: 
-- Research on the company: some products you find cool and why (and maybe some notes about ideas on how to improve them), any cool recent news, any company-soecific technology they use (like Azure for Microsoft), etc.
+- Research on the company: some products you find cool and why (and maybe some notes about ideas on how to improve them), any cool recent news, any company-specific technology they use (like Azure for Microsoft), etc.
 - Questions to ask interviewers at the end: try to avoid basic ones that tons of other interviewees might ask.
 - Answers to 'common' questions: "tell me about yourself/experiences", "what's your favorite product/why?", "tell me about a time you've had to collaborate with a team and what was your role?/how did you handle conflict?", etc.
 - Anything else that might be helpful for you to remember :)
