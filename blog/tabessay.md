@@ -1,5 +1,6 @@
-**Tell us about something that is meaningful to you and why.**
 My answer to Stanford's supplemental essay question.
+
+**Tell us about something that is meaningful to you and why.**
 
 I think I might have a tab addiction. 
 
