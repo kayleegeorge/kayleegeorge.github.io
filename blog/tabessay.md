@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 **Tell us about something that is meaningful to you and why (250).**
 
 _My answer to one of Stanford's supplemental essay questions._
