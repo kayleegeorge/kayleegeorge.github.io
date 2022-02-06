@@ -6,11 +6,11 @@ Howdy! Welcome to my site 👋
 * Product Management Intern x3.
 
 ### Fun-ish Facts
-* I am a coffee addict. Favorite drink is Philtered Soul Cold Brew at Philz.
+* Coffee addict. Favorite drink is Philtered Soul Cold Brew at Philz.
 * I love the outdoors. Hit me up with backpacking or camping recs.
-* Currently reading Sapiens (highly recommend).
+* Currently learning about NFTs.
 * I love food. Good food with good company is a good pairing.
-* I dance on Alliance, a Stanford hip-hop team.
+* I dance on Alliance, a Stanford hip-hop team, & Jam Pac'd, another Stanford hip-hop team for women.
 * I like chalky hands and [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM).
 
 ```
