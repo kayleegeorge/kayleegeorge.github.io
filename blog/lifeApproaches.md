@@ -1,2 +1,8 @@
-**Figuring it all out**
+---
+layout: post
+---
+
+### Figuring it all out
+
+Background: 
 
