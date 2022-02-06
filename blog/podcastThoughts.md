@@ -2,7 +2,7 @@
 layout: post
 ---
 
-###My Podcast Diary
+## My Podcast Diary
 
 I've been getting into podcasting a lot, listening not creating (although I hope to in the future). I usually listen during drives or when I take walks.
 Topics vary, it used to be crime and mystery, now they lean on the side of educational or from the experts.
