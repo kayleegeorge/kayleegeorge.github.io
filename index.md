@@ -2,7 +2,7 @@
 Howdy! Welcome to my site 👋 
 
 ### Boring Facts
-* Symbolic Systems major at Stanford University.
+* Symbolic Systems major at Stanford University (but basically CS lol).
 * Product Management Intern x3.
 
 ### Fun-ish Facts
