@@ -8,3 +8,6 @@ Trying to get back into writing a bit more.
 [Why I chose SymSys](https://stanfordwics.medium.com/choosing-symbolic-systems-vs-computer-science-at-stanford-e7226b54f93b)
 
 [Stanford Tab Supplemental Essay](./blog/tabessay.html)
+
+[Running podcast list](./blog/PodcastThoughts.html)
+
