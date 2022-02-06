@@ -23,9 +23,9 @@ _Disclaimer: This is not a complete list._
 12) Can I Ask You a Ridiculously Personal Question? (Freakonomics)
 13) Hot to Be Better at Death (Freakonomics)
 14) The Roast of my Past (Call Her Daddy)
-15) Carl Hart: Heroin, Cocaine, MDMA, Alcohol(Lex Fridman)
+15) Carl Hart: Heroin, Cocaine, MDMA, Alcohol (Lex Fridman) -- thinks we should legalize all hard drugs, I disagree but ok
 16) Lucy Guo, Hackathons & High Intensity Living (Pod of Jake) -- key takeaway: don't be afriad of building, it's how you learn fast
 17) OpenSea & The Business of NFTs -- learned about cool applications of NFTs
 18) Gary Vee Explains How He Made $90 Million on NFTs (FullSend) -- dope guy, interesting thoughts
-19) The Opiod Tragedy, Part 1: "We've Addicted an Entire Generation"
+19) The Opiod Tragedy, Part 1: "We've Addicted an Entire Generation" 
 20) The Opiod Tragedy, Part 2: "It's Not a Death Sentence"
