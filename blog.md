@@ -9,5 +9,5 @@ Trying to get back into writing a bit more.
 
 [Stanford Tab Supplemental Essay](./blog/tabessay.html)
 
-[Running podcast list](./blog/PodcastThoughts.html)
+[Running podcast list](./blog/podcastThoughts.html)
 
