@@ -1,5 +1,5 @@
 ---
-Post layout: post
+layout: post
 ---
 
 ### On Distractors: Prestige
