@@ -11,7 +11,7 @@ Howdy! Welcome to my site 👋
 * Bullish on web3/crypto.
 * I love food. Good food with good company is a good pairing.
 * I dance on Alliance, a Stanford hip-hop team, & Jam Pac'd, another Stanford hip-hop team for women.
-* I like chalky hands and [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM).
+* I like [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM).
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
