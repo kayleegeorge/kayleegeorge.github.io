@@ -11,7 +11,7 @@ My primary issue with prestige is that it is a distractor — particularly for a
 
 Prestige clouds judgement. In the wise words of Paul Graham, prestige 'causes you to work not on what you like, but what you'd like to like.' I think this is especially true of young people trying to figure out what they do and do not enjoy. They tend to care too much about the opinions of others and focus too little on doing things for the hell of it. People can easily trick themselves into thinking they like something if prestige is involved. Oftentimes, just the prospect of being among the best in X is enough to justify continuing X. A mix of praise, timing, and oppoortunity can make the wrong thing feel right in the moment — and thus difficult to break away.
 
-It's easy to say “don’t let prestige cloud your pursuits.” It's easy to nod in agreement. But I think this is difficult to truly internalize (at least it is for me, maybe that's not the case with you). 
+It's easy to say “don’t let prestige cloud your pursuits” and nod in agreement. But I think this is difficult to truly internalize (at least it is for me, maybe that's not the case with you). 
 
 I allowed prestige to influence my ambitions at a very wrong time. I have made decisions that prioritize prestige at the expense of exploration, genuine curiosity, personal growth, and learning. But the conclusion that I have come to is this: true prestige can only be attained if you are doing what you genuinely love doing. 
 
