@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ***
 Howdy! Welcome to my site 👋 
 
