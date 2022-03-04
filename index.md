@@ -5,9 +5,10 @@ layout: post
 ***
 Howdy! Welcome to my site 👋 
 
-### Boring Facts
-* Symbolic Systems major at Stanford University (but basically CS lol).
+### Facts
+* Symbolic Systems & Computer Science major at Stanford University (NLP, Algorithms, etc).
 * Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
+* Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
 
 ### Fun-ish Facts
 * Coffee addict in denial. Favorite drink is Philtered Soul Cold Brew at Philz.
@@ -21,5 +22,6 @@ Howdy! Welcome to my site 👋
 Contact me at krgeorge [at] stanford [dot] edu
 ```
 [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
+[Github](https://github.com/kayleegeorge)
 
 ***
