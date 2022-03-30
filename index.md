@@ -5,7 +5,7 @@ layout: post
 ***
 Howdy! Welcome to my site 👋 
 
-### Facts
+### Boring-ish Facts
 * Computer Science major at Stanford University (NLP, Algorithms, etc).
 * Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
 * Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
