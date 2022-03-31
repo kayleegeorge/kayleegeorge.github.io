@@ -13,4 +13,4 @@ Trying to get back into writing a bit more.
 
 [On Distractors: Prestige](./blog/prestige.html)
 
-[On Crypto](./blog/crypto.html)
+[Crypto](./blog/crypto.md)
