@@ -12,3 +12,5 @@ Trying to get back into writing a bit more.
 [Running podcast list](./blog/podcastThoughts.html)
 
 [On Distractors: Prestige](./blog/prestige.html)
+
+[On Crypto](./blog/crypto.html)
