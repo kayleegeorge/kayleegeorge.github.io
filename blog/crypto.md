@@ -8,6 +8,8 @@ layout: post
 **NFTs**
 
 ![my zuki mf](../zukimf.png)
+<img src="../zukimf.jpg" alt="my zuki mf" width="200"/>
+
 
 This is one of the NFTs I bought during my NFT phase. Don't be like me. 
 
