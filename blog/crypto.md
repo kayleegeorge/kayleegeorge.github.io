@@ -6,7 +6,8 @@ layout: post
 [To-Do hehe]
 
 **NFTs**
-![image info](zukimf.png)
+
+![my zuki mf](../zukimf.png)
 
 This is one of the NFTs I bought during my NFT phase. Don't be like me. 
 
