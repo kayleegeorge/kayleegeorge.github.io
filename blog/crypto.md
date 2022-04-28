@@ -3,7 +3,7 @@ layout: post
 ---
 ## On Crypto
 
-#### Crypto Motivations
+### Crypto Motivations
 
 Crypto excites me for three main reasons: 
 
@@ -14,14 +14,14 @@ Crypto excites me for three main reasons:
 3) **Alignment of values**: The crypto community empowers each other to propel innovation forward, together. I deeply believe in the vision of builders, VCs, and consumers alike: a decentralized computational infrastructure that democratizes finance (and beyond). The collaborative and optimistic enthusiasm that the crypto community has is also a very fun culture. I am extremely lucky to be involved in the crypto ecosystem at Stanford in particular, where conversations with my peers are thoroughly enjoyable, exciting, and educational.
 
 
-**NFTs**
+### NFTs
 
 <img src="../zukimf.png" alt="my zuki mf" width="200"/>
 
 
-This is one of the NFTs I bought during my NFT phase. Don't be like me. 
+This is one of the NFTs I bought during my NFT phase. Don't be like me. Despite my NFT shenanigans, I believe they are fascinating intersection of content creation, ownership, and technilogical innovation. 
 
-**Crypto Twitter**
+### Crypto Twitter
 
 My [final paper](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/efb24b144723f6762a64b1dc6b4b74a9f9c9fef6/Ling130A_Final_Report_.pdf) for Linguist130A: Introduction to Semantics and Pragmatics. Yes, I wrote it in LaTex.
 
