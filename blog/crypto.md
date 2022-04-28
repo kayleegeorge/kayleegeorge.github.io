@@ -1,9 +1,9 @@
 ---
 layout: post
 ---
-### On Crypto
+## On Crypto
 
-## Crypto Motivations
+#### Crypto Motivations
 
 Crypto excites me for three main reasons: 
 
