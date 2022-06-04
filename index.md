@@ -9,14 +9,14 @@ Howdy! Welcome to my site 👋
 * Computer Science at Stanford University.
 * Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
 * Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
-* Incoming SWE intern at Uniswap Labs.
+* Incoming SWE intern at Uniswap Labs (Summer 2022). [Outliers](https://www.outliers.build/about) Fellow.
 
 ### Fun-ish Facts
 * Coffee addict (in denial). Favorite drink is Philtered Soul Cold Brew at Philz.
 * I love the outdoors. Hit me up with backpacking or camping recs.
 * Bullish on crypto.
 * I love food. Good food with good company is a good pairing.
-* I dance on Alliance, a Stanford hip-hop team, & Jam Pac'd, another Stanford hip-hop team for women.
+* I dance on Alliance, a Stanford hip-hop team, & Jam Pac'd, another women-only Stanford hip-hop team.
 * Web3 more like We3b: AoT (ft. [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM)), Demon Slayer, Ousama Ranking.
 
 ```
