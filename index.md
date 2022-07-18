@@ -9,7 +9,7 @@ Howdy! Welcome to my site 👋
 * Computer Science at Stanford University.
 * Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
 * Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
-* Incoming SWE intern at Uniswap Labs (Summer 2022). [Outliers](https://www.outliers.build/about) Fellow.
+* SWE intern at Uniswap Labs (Summer 2022).
 
 ### Fun-ish Facts
 * Coffee addict (in denial). Favorite drink is Philtered Soul Cold Brew at Philz.
@@ -17,7 +17,8 @@ Howdy! Welcome to my site 👋
 * Bullish on crypto.
 * I love food. Good food with good company is a good pairing.
 * I dance on Alliance, a Stanford hip-hop team, & Jam Pac'd, another women-only Stanford hip-hop team.
-* Web3 more like We3b: AoT (ft. [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM)), Demon Slayer, Ousama Ranking.
+* Web3 more like We3b: AoT (ft. [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM)), Demon Slayer, Ousama Ranking, Jujutsu Kaisen.
+* Mechanical KLEEboard addict.
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
