@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 **Why I am a CS major 🤡  / Why I switched from SymSys to CS**
 
 Damn I’m about to expose myself fr. If you have read my past article on [Why I chose SymSys](https://stanfordwics.medium.com/choosing-symbolic-systems-vs-computer-science-at-stanford-e7226b54f93b), I am sorry I have betrayed you. You guys deserve to know the truth.
