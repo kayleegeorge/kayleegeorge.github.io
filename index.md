@@ -3,13 +3,13 @@ layout: post
 ---
 
 ***
-Howdy! Welcome to my site 👋 
+Howdy! 👋 
 
 ### Boring-ish Facts
 * Computer Science at Stanford University.
-* SWE intern at Uniswap Labs (Summer 2022). Open-sourced here: https://github.com/Uniswap/interface.
-* Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
-* Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
+* Prev. SWE intern at Uniswap Labs (Summer 2022). Open-sourced here: https://github.com/Uniswap/interface.
+* Prev. Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
+* Prev. Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
 
 
 ### Fun-ish Facts
