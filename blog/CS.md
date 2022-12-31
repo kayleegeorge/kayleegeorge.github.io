@@ -8,7 +8,7 @@ Damn I’m about to expose myself fr. If you have read my past article on [Why I
 
 Hello! I’m Kaylee, an incoming junior-senior-ish studying computer science. I wanted to write a self-exposé as it seems that my past SymSys article has reached a relatively broad audience. Long story short, I am now a CS major and this is why.
 
-If you are looking for the short-and-sweet version, here it is: **Find what you are passionate about and challenge yourself accordingly. Don't be afraid of challenging yourself.** Longer version below :)
+If you are looking for the short-and-sweet version, here it is: **College is an intellectual playground. Explore, find what you are passionate about, and challenge yourself accordingly. Don't be afraid of challenging yourself, embrace risk sometimes.** Longer version below :)
 
 _Disclaimer: In this article, I won’t be going into life advice or how to make the most of your Stanford social experience, you can figure that out on your own. I am strictly focusing on academic classes and your major — very exciting, I know. Further, this is not a piece on why CS is better than SymSys or why you should switch to CS. This is simply advice on how to craft a fulfilling academic experience using my own experiences as a case study._
 
