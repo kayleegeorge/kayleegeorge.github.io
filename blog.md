@@ -16,3 +16,5 @@ Trying to get back into writing a bit more.
 [On Distractors: Prestige](./blog/prestige.html)
 
 [Crypto](./blog/crypto.md)
+
+[Groth16](./blog/groth16.md)
