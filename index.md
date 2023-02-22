@@ -21,6 +21,10 @@ Howdy! 👋
 * Web3 more like We3b: AoT (ft. [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM)), Demon Slayer, Ousama Ranking, Jujutsu Kaisen.
 * Mechanical KLEEboard addict.
 
+### Crypto Stuff
+* Treehacks 2023 Most Technically Complex Grand Prize: [Proactive Refresh](https://devpost.com/software/proactive-refresh)
+* Hack Lodge W23 cohort
+
 ```
 Contact me at krgeorge [at] stanford [dot] edu
 ```
