@@ -23,7 +23,7 @@ Howdy! 👋
 
 ### Crypto Stuff
 * Treehacks 2023 Most Technically Complex Grand Prize: [Proactive Refresh](https://devpost.com/software/proactive-refresh)
-* Hack Lodge W23 cohort
+* Hack Lodge W23 cohort: Nozee [circuits](https://github.com/emmaguo13/zk-blind) 
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
