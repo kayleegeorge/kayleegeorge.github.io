@@ -21,15 +21,16 @@ Howdy! 👋
 * Web3 more like We3b: AoT (ft. [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM)), Demon Slayer, Ousama Ranking, Jujutsu Kaisen.
 * Mechanical KLEEboard addict.
 
-### Cryptography Maxi
+### Cryptography is for the Cool Kids
 * Treehacks 2023 Most Technically Complex Grand Prize: [Proactive Refresh](https://devpost.com/software/proactive-refresh)
 * Hack Lodge W23: Nozee [circuits](https://github.com/emmaguo13/zk-blind) 
+* Number Theory for Cryptography WIM on [Groth16](https://kayleegeorge.github.io/math110_WIM.pdf) 
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
 ```
 [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
 [Github](https://github.com/kayleegeorge)
-[Twitter](https://twitter.com/kaygeorge82)
+[Twitter](https://twitter.com/kayrgeorge)
 
 ***
