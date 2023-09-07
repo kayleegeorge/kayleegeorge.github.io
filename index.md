@@ -7,6 +7,7 @@ Howdy! 👋
 
 ### Boring-ish Facts
 * Computer Science (theory) Major, Symbolic Systems Minor at Stanford University.
+* Prev. SWE intern at Discord (Summer 2023). Platform security team.
 * Prev. SWE intern at Uniswap Labs (Summer 2022). Open-sourced here: https://github.com/Uniswap/interface.
 * Prev. Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
 * Prev. Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
@@ -21,8 +22,8 @@ Howdy! 👋
 * Mechanical KLEEboard addict.
 
 ### Cryptography is for the Cool Kids
-* Treehacks 2023 Most Technically Complex Grand Prize: [Proactive Refresh](https://devpost.com/software/proactive-refresh)
-* Hack Lodge W23: Nozee [circuits](https://github.com/emmaguo13/zk-blind) 
+* Treehacks 2023 Most Technically Complex Grand Prize: [Proactive Refresh](https://devpost.com/software/proactive-refresh) 
+* Hack Lodge W23: Nozee [circuits](https://github.com/emmaguo13/zk-blind) (ZK anon messaging board using JWTs & email)
 * Number Theory for Cryptography WIM on [Groth16](https://kayleegeorge.github.io/math110_WIM.pdf) 
 
 ```
