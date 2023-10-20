@@ -2,7 +2,7 @@
 layout: post
 ---
 
-Howdy, I'm Kaylee.
+Howdy, I'm Kaylee!
 
 I study Computer Science (theory) and Symbolic Systems at Stanford. I've interned at Discord (platform security), Uniswap Labs (web), Microsoft (Windows Microsoft Search, Assistant and Intelligence), Tesla (Supply Chain), and DreamBox Learning. I also spent time researching [children's development through drawings](https://twitter.com/hollyahuey/status/1552118837960638464) at the Stanford Language and Cognition Lab. 
 
@@ -12,7 +12,8 @@ I will go great lengths for good food and coffee. I believe walks help untangle 
 
 ***
 
-If you like stargazing in national parks, philosophizing about crypto, or eating kimchi, please reach out at krgeorge [at] stanford [dot] edu 🤠
+If you like stargazing in national parks, showing pictures of your dog, or eating kimchi, please reach out at krgeorge [at] stanford [dot] edu 🤠
 
-[Twitter](https://twitter.com/kayrgeorge) | [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/) | [Github](https://github.com/kayleegeorge)
-
+[Twitter](https://twitter.com/kayrgeorge) 
+[LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
+[Github](https://github.com/kayleegeorge)
