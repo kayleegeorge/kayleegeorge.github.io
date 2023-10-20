@@ -4,7 +4,7 @@ layout: post
 
 Howdy, I'm Kaylee 🤠
 
-I study Computer Science (theory) and Symbolic Systems at Stanford. I've interned at Discord (platform security), Uniswap Labs (web), Microsoft (Windows Microsoft Search, Assistant and Intelligence), Tesla (Supply Chain), and DreamBox Learning. I also spent time researching [children's development through drawings](https://twitter.com/hollyahuey/status/1552118837960638464) at the Stanford Language and Cognition Lab. 
+I study Computer Science (theory) and Symbolic Systems at [Stanford](https://www.youtube.com/watch?v=XF7D7fSU--U). I've interned at Discord (platform security), Uniswap Labs (web), [Microsoft](https://www.reddit.com/r/gifs/comments/2iy3wn/bill_gates_jumps_over_a_chair/) (Windows Microsoft Search, Assistant and Intelligence), Tesla (Supply Chain), and DreamBox Learning. I also spent time researching [children's development through drawings](https://twitter.com/hollyahuey/status/1552118837960638464) at the Stanford [Language and Cognition Lab](http://langcog.stanford.edu/index.html). 
 
 I am interested in cryptography and building delightful product experiences. Some of my favorite classes at Stanford include number theory for [cryptography](https://kayleegeorge.github.io/math110_WIM.pdf), a [George Orwell](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/) english class, and an [animal behavior](https://www.scientificamerican.com/article/the-mind-of-an-octopus/) class. Make of that what you will. 
 
