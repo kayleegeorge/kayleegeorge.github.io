@@ -2,35 +2,18 @@
 layout: post
 ---
 
+Howdy, I'm Kaylee.
+
+I study Computer Science (theory) and Symbolic Systems at Stanford. I've interned at Discord (platform security), Uniswap Labs (web), Microsoft (Windows Microsoft Search, Assistant and Intelligence), Tesla (Supply Chain), and DreamBox Learning. I also spent time researching [children's development through drawings](https://twitter.com/hollyahuey/status/1552118837960638464) at the Stanford Language and Cognition Lab. 
+
+I am interested in cryptography and building delightful product experiences. Some of my favorite classes at Stanford include: Number Theory for Cryptography ([Groth16 paper](https://kayleegeorge.github.io/math110_WIM.pdf)), a George Orwell english class, and an animal behavior class. Make of that what you will. 
+
+I will go great lengths for good food and coffee. I believe walks help untangle thought knots and are better than buses. I think [running](https://en.wikipedia.org/wiki/What_I_Talk_About_When_I_Talk_About_Running) is a good way to experience the physical human experience and [plants](https://en.wikipedia.org/wiki/How_to_Change_Your_Mind) are a good way to experience dimensions of the conscious human experience. I occasionally play with [words](kleerants.substack.com). 
+
 ***
-Howdy! 👋 
-
-### Boring-ish Facts
-* Computer Science (theory) Major, Symbolic Systems Minor at Stanford University.
-* Prev. SWE intern at Discord (Summer 2023). Platform security team.
-* Prev. SWE intern at Uniswap Labs (Summer 2022). Open-sourced here: https://github.com/Uniswap/interface.
-* Prev. Product Management Intern x4 (Microsoft, Tesla, DreamBox Learning, Dragonfruit.ai).
-* Prev. Research Assistant at Stanford Language and Cognition Lab (PI: Mike Frank).
-
-### Fun-ish Facts
-* Coffee addict (in denial). Favorite drink is Philtered Soul Cold Brew (Philz Way).
-* I love the outdoors. Hit me up with backpacking or camping recs.
-* Bullish on crypto.
-* I love food. Good food with good company is a good pairing.
-* I dance on Alliance, a Stanford hip-hop team, & Jam Pac'd, another women-only Stanford hip-hop team.
-* Web3 more like We3b: AoT (ft. [Levi Ackerman](https://youtu.be/WjiCS5Zj1hM)), HxH, Demon Slayer, Ousama Ranking, Jujutsu Kaisen.
-* Mechanical KLEEboard addict.
-
-### Cryptography is for the Cool Kids
-* Treehacks 2023 Most Technically Complex Grand Prize: [Proactive Refresh](https://devpost.com/software/proactive-refresh) 
-* Hack Lodge W23: Nozee [circuits](https://github.com/emmaguo13/zk-blind) (ZK anon messaging board using JWTs & email)
-* Number Theory for Cryptography WIM on [Groth16](https://kayleegeorge.github.io/math110_WIM.pdf) 
 
 ```
 Contact me at krgeorge [at] stanford [dot] edu
 ```
-[LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
-[Github](https://github.com/kayleegeorge)
-[Twitter](https://twitter.com/kayrgeorge)
+[Twitter](https://twitter.com/kayrgeorge) | [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/) | [Github](https://github.com/kayleegeorge)
 
-***
