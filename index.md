@@ -8,11 +8,11 @@ I study Computer Science (theory) and Symbolic Systems at Stanford. I've interne
 
 I am interested in cryptography and building delightful product experiences. Some of my favorite classes at Stanford include number theory for [cryptography](https://kayleegeorge.github.io/math110_WIM.pdf), a [George Orwell](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/) english class, and an [animal behavior](https://www.scientificamerican.com/article/the-mind-of-an-octopus/) class. Make of that what you will. 
 
-I will go great lengths for good food and [coffee](https://www.thecoffeemovement.com/). I believe walks help untangle thought knots and are better than buses. I think [running](https://en.wikipedia.org/wiki/What_I_Talk_About_When_I_Talk_About_Running) is a good way to experience the physical human experience and [plants](https://en.wikipedia.org/wiki/How_to_Change_Your_Mind) are a good way to experience the conscious human experience. I occasionally play with [words](kleerants.substack.com). 
+I will go great lengths for good [food](https://www.reading-f.com/magazine-f-kimchi/) and [coffee](https://www.thecoffeemovement.com/). I believe walks help untangle thought knots and are better than buses. I think [running](https://en.wikipedia.org/wiki/What_I_Talk_About_When_I_Talk_About_Running) is a good way to experience the physical human experience and [plants](https://en.wikipedia.org/wiki/How_to_Change_Your_Mind) are a good way to experience the conscious human experience. I occasionally play with [words](kleerants.substack.com). 
 
 ***
 
-If you like stargazing in national parks, showing pictures of your dog, or eating kimchi, please reach out at krgeorge [at] stanford [dot] edu. 
+If you like stargazing in places with no light pollution, showing off pictures of your dog, or making homemade gnocchi, please reach out at krgeorge [at] stanford [dot] edu. 
 
 [Twitter](https://twitter.com/kayrgeorge) 
 [LinkedIn](https://www.linkedin.com/in/kayleegeorge8/)
