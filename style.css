@@ -48,6 +48,10 @@ a:visited {
   height: 24px;
 }
 
+.small-spacer {
+  height: 8px;
+}
+
 .blog-header {
   display: flex;
   flex-direction: column;
@@ -68,4 +72,26 @@ a:visited {
   flex-direction: column;
   gap: 10px;
   padding: 20px 0;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+.align-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+}
+
+.small-title {
+  font-size: 17px;
+  margin: 6px 0px;
+  text-decoration: underline;
 }
