@@ -9,5 +9,9 @@ permalink: /blog/
 {: .blog-header}
 
 Shorter musings. 
-- [Keyboard #01](/blog/keyboard-build/)
-- [Some SF Recs](/blog/sf-recs/)
+
+--
+
+[Keyboard #01](/blog/keyboard-build/)
+
+[Some SF Recs](/blog/sf-recs/)
