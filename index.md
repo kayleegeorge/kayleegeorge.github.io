@@ -31,6 +31,7 @@ play with [words](https://kleerants.substack.com).
 ## Projects
 {: .subtitle}
 
+- [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (5th at Gemini's Nano Banana hackathon).
 - [Daimo](https://github.com/daimo-eth/daimo): a stablecoin payments app ("Venmo for crypto").
 - [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
 - [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
