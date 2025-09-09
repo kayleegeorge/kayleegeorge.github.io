@@ -5,7 +5,7 @@ date: 2025-09-08
 permalink: /blog/ai-editors/
 ---
 
-AI editor interfaces usually fall into one of two buckets: (1) back-and-forth chat, or (2) drag-and-drop canvases. That's why I wanted to explore building a different AI generation interface at the first Gemini Nano Banana hackathon (and won 5th place!).
+AI editor interfaces usually fall into one of two buckets: (1) back-and-forth chat, or (2) drag-and-drop canvases. That's why I wanted to explore building a different AI generation interface at the first Gemini Nano Banana hackathon (and won 4th place!).
 
 We built a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines. Nano Banana uniquely enables apps & interfaces like this because of its style consistency (both between input & output images and across multiple calls) and generation speed.
 
@@ -81,4 +81,4 @@ Lots of these AI image editors are still in the "toy" stage, but we're entering 
 - **Granular intent**: Interfaces should handle the bulk of reasoning about inputs at the _user input_ layer. Midjourney's style/image/omni separation is a clearer mental model for users and offers better input guidance for models. These interfaces will probably vary depending on the use case (e.g. make a comic book will have character input stage, plot stage, etc.). 
 - **Sketching speed**: When generation is fast enough, AI becomes a co-collaborator in brainstorming rather than a service you commission. This gets ideas off the ground and lets you iterate faster. 
 
-_Here's the [Github](https://github.com/kayleegeorge/turbo-banana)_ to our hackathon project!_
+_Here's the [Github](https://github.com/kayleegeorge/turbo-banana) to our hackathon project!_
