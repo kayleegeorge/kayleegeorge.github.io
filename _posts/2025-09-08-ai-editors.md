@@ -65,7 +65,7 @@ If you're a creative and need inspiration for character design or need a bunch o
 
 **
 
-Building a good AI editor depends on the end product. One thing I really disliked about [Google AI Studio](https://aistudio.google.com/prompts/new_chat) is how slow the turn-taking chat interface is. This is a great pattern for when you are iterating on _one_ thing, but horrible for iterating on _many_ things under _one_ theme. It's incredibly slow / impossible to parallelize work, annoying to repeat prompts / image attachments for each generation, difficult to differentiate style vs. content, and no gallery view for seeing all outputs at once.
+One thing I really disliked about [Google AI Studio](https://aistudio.google.com/prompts/new_chat) is how slow the turn-taking chat interface is. This is a great pattern for when you are iterating on _one_ thing, but horrible for iterating on _many_ things under _one_ theme. It's incredibly slow / impossible to parallelize work, annoying to repeat prompts / image attachments for each generation, difficult to differentiate style vs. content, and no gallery view for seeing all outputs at once.
 
 Even [Sora](https://openai.com/sora/) and [Midjourney](https://www.midjourney.com/) haven't nailed the _best_ flow in my opinion, but I think they are still very good consumer interfaces that have the right pipeline for what they are trying to achieve right now (queues for background generation, social explore gallery, etc.).
 
@@ -75,5 +75,10 @@ As mentioned in an [earlier post](/blog/ai-manga/), I really like Midjourney's s
     <img src="/public/ai-manga/prompt.png" alt="South park" style="width: 100%; height: auto; border-radius: 8px;">
 </div>
 
-Lots of these AI image editors are still in the "toy" era but they're increasingly becoming more important for consumer products to distinguish themselves (especially if many are using the same underlying models) and better capture user intent for more reliable outputs -- so it's worth investing time in nailing these human-AI interfaces.
+Lots of these AI image editors are still in the "toy" stage, but we're entering an era where the human-AI interface will determine winners and losers. As models commoditize, the interface becomes the differentiator. Building at the Nano Banana hackathon made me think about:
 
+- **Parallel creativity**: Most AI tools assume single-threaded thinking, but creativity is about exploring multiple directions simultaneously. We need interfaces for creative worlds, not just individual outputs.
+- **Granular intent**: Interfaces should handle the bulk of reasoning about inputs at the _user input_ layer. Midjourney's style/image/omni separation is a clearer mental model for users and offers better input guidance for models. These interfaces will probably vary depending on the use case (e.g. make a comic book will have character input stage, plot stage, etc.). 
+- **Sketching speed**: When generation is fast enough, AI becomes a co-collaborator in brainstorming rather than a service you commission. This gets ideas off the ground and lets you iterate faster. 
+
+_Here's the [Github](https://github.com/kayleegeorge/turbo-banana)_ to our hackathon project!_
