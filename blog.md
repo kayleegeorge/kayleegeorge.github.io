@@ -19,3 +19,5 @@ Shorter musings.
 [Some SF Recs](/blog/sf-recs/) | _Jan 2025_
 
 [Keyboard #01](/blog/keyboard-build/) | _Dec 2024_
+
+[AI Prediction Markets](/blog/ai-prediction-markets/) | _Oct 2024_
