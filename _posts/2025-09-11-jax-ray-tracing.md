@@ -81,7 +81,6 @@ But JAX needs to trace through your entire function to understand the computatio
 
 _*Note: The calculations for the quadratic equation coefficients are simplified: math [here](https://raytracing.github.io/books/RayTracingInOneWeekend.html#surfacenormalsandmultipleobjects/simplifyingtheray-sphereintersectioncode)._
 
---
 Another example of this `jnp.where()` JAX hack is root calculation, e.g. the orignal Rust implementation:
 
 ```rust
