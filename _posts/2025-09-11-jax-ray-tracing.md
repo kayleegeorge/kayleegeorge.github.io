@@ -13,6 +13,7 @@ Ray tracing is an ideal JAX application: it's computationally intensive but para
 
 This tutorial has four parts (each covers a few chapters from the Ray Tracing in One Weekend) and ultimately builds up to the iconic Ray Tracer image. I also made the code available in this [Colab](https://colab.research.google.com/drive/1A5afhu5yGbXSaUFWWFPHotGMWy6Ao1DN?usp=sharing) if you want to follow along there or make any modifications/extensions.
 
+_*Note: There are some parts in this post where I skip over going through certain redundant code snippets — particularly whenever I need to use a new `trace_pixel` or `render` function. You can see the full implementations in Colab._
 
 <br/>
 
@@ -37,6 +38,8 @@ import time
 print("JAX devices:", jax.devices())
 ```
 
+<br/>
+
 ### Ray Definition
 
 A ray is defined by an origin and a direction: `P(t) = A + tb`. All ray tracers have a notion of a ray (usually a ray class) and color computation along a ray.
@@ -59,6 +62,8 @@ def ray_at(origin, direction, t):
     """Returns the point at parameter t along the ray"""
     return origin + t * direction
 ```
+
+<br/>
 
 ### Ray-sphere intersection
 
@@ -132,6 +137,8 @@ def ray_sphere_intersect(ray_origin, ray_direction, sphere_center, radius):
   return hit, t, p, normal
 ```
 
+<br/>
+
 ### Simple Camera
 
 JAX's functional programming paradigm means no `self` or global state. Instead of initializing camera properties once (as you would in Rust's `Camera::new()`), we recalculate these "camera constants" each time in `camera_get_ray()`. While this might seem inefficient, JAX's JIT compiler is smart enough to optimize these repeated calculations.
@@ -179,6 +186,8 @@ def camera_get_ray(i, j, image_width, image_height):
   return camera_center, ray_direction
 ```
 
+<br/>
+
 ### Simple Shading
 
 This `ray_color` function handles two cases: sphere hits get colored based on their surface normal (creating a nice gradient effect), while misses render a blue-to-white sky gradient based on the ray's Y direction.
@@ -203,6 +212,8 @@ def ray_color(ray_origin, ray_direction, sphere_center, radius):
 
   return jnp.where(hit, sphere_color, sky_color)
 ```
+
+<br/>
 
 ### Rendering
 
@@ -297,6 +308,8 @@ def scene_intersect(ray_origin, ray_direction, centers, radii, material_ids):
 
   return hit, t, p, normal, material_id
 ```
+
+<br/>
 
 ### Diffuse Materials
 
@@ -462,6 +475,8 @@ def defocus_disk_sample(key, camera_center, defocus_disk_u, defocus_disk_v):
     return camera_center + p[0] * defocus_disk_u + p[1] * defocus_disk_v
 ```
 
+<br/>
+
 ### Anti-aliasing
 
 Anti-aliasing smooths out the jagged "staircase" edges you get when rendering 3D scenes onto a pixel grid.
@@ -514,7 +529,6 @@ def trace_pixel_antialiased(i, j, image_width, image_height, vfov, lookfrom, loo
   # Average the samples
   return jnp.mean(sample_colors, axis=0)
 ```
-
 
 <div class="align-center">
     <img src="/public/jax/camera.png" width="700px"/>
@@ -692,6 +706,7 @@ After making some new `trace_pixel()` and `render()` wrapper functions, we get:
     <img src="/public/jax/materials.png" width="700px"/>
 </div>
 
+<br/>
 
 ### A Final Render
 
@@ -722,5 +737,5 @@ Subsequent renders are fast because JAX caches the JIT-compiled functions. As lo
 
 Speed comes from: (a) No recompilation for non-static argument changes, (b) Vectorized operations processing millions of rays in parallel, and (c) XLA optimizations like operation fusion and memory layout optimization. 
 
-_This project was a lot of fun. If you want to play around for yourself, [here](https://colab.research.google.com/drive/1A5afhu5yGbXSaUFWWFPHotGMWy6Ao1DN?usp=sharing) is the Colab._
+_Again if you want to play around for yourself, [here](https://colab.research.google.com/drive/1A5afhu5yGbXSaUFWWFPHotGMWy6Ao1DN?usp=sharing) is the Colab!_
 
