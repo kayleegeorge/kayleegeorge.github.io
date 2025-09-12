@@ -37,7 +37,7 @@ import time
 print("JAX devices:", jax.devices())
 ```
 
-**Ray Definition**
+### Ray Definition
 
 A ray is defined by an origin and a direction: `P(t) = A + tb`. All ray tracers have a notion of a ray (usually a ray class) and color computation along a ray.
 
