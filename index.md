@@ -4,12 +4,9 @@ layout: home
 
 <div class="spacer"></div>
 
-## About
-{: .subtitle}
-
 I was most recently a member of technical staff at [/dev/agents](https://sdsa.ai). Before that, I worked on 
 open-source crypto at [Daimo](https://github.com/daimo-eth/daimo) (self-custodial stablecoin wallet & 
-seamless cross-chain payments) and at the Ethereum Foundation Signature Singularity Residency in Japan. 
+seamless cross-chain payments) and at an applied cryptography residency in Osaka, Japan. 
 I interned at Discord (platform security), Uniswap Labs, [Microsoft](https://www.reddit.com/r/gifs/comments/2iy3wn/bill_gates_jumps_over_a_chair/) (Microsoft
 Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I'm an angel investor in [Succinct Labs](https://www.succinct.xyz/)
 and Applied Compute Inc.
@@ -31,8 +28,8 @@ play with [words](https://kleerants.substack.com).
 ## Projects
 {: .subtitle}
 
-- [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (5th at Gemini's Nano Banana hackathon).
-- [Daimo](https://github.com/daimo-eth/daimo): a stablecoin payments app ("Venmo for crypto").
+- [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
+- [Daimo](https://github.com/daimo-eth/daimo): a stablecoin payments app ("Venmo for crypto"); built an [indexer](https://daimo.super.site/blog/less-terrible-ethereum-indexing).
 - [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
 - [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
 - ClaudeRed: LLM blue-team vs. red-team game (Anthropic London Hackathon fall '23 Finalist, solo).
@@ -47,7 +44,7 @@ play with [words](https://kleerants.substack.com).
 
 <div class="spacer"></div>
 
-## As of late...
+## Misc
 {: .subtitle}
 
 - Staged for a day at [Chez Panisse](https://en.wikipedia.org/wiki/Chez_Panisse)

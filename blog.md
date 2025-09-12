@@ -25,3 +25,5 @@ Shorter musings.
 [Keyboard #01](/blog/keyboard-build/) | _Dec 2024_
 
 [AI Prediction Markets](/blog/ai-prediction-markets/) | _Oct 2024_
+
+[Attested Images](/blog/postcard) | _May 2024_ 
