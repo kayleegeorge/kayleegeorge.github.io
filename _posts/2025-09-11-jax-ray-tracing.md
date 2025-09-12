@@ -392,7 +392,7 @@ def ray_color_diffuse(ray_origin, ray_direction, centers, radii, material_ids, m
 I rewrote the `render_image()` function and made a `create_diffuse_scene()` which resulted in:
 
 <div class="align-center">
-    <img src="/public/jax/diffuse.png" width="600px"/>
+    <img src="/public/jax/diffuse.png" width="450px"/>
 </div>
 
 <br/>
@@ -568,93 +568,84 @@ Each material type requires different physics calculations, random decisions, an
 Unfortunately, JAX's constraints for dynamic control flow means the `jnp.where` conditionals get a bit gnarly in terms of readability...
 
 ```python
-def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids, material_data, rng_key, depth=0, max_depth=8):
-    """Ray tracing with diffuse, metal, and glass materials"""
-    if depth >= max_depth:
-        return jnp.array([0.0, 0.0, 0.0])
-    
-    hit, t, p, normal, material_id = scene_intersect(ray_origin, ray_direction, centers, radii, material_ids)
-    
-    material_type = material_data['types'][material_id]  # 0=diffuse, 1=metal, 2=glass
-    albedo = material_data['albedos'][material_id]
-    fuzz = material_data['fuzz'][material_id]
-    refractive_index = material_data['refractive_indices'][material_id]
-    
-    key1, key2, key3 = jax.random.split(rng_key, 3)
-    
-    # Diffuse scattering
-    diffuse_scatter = normal + random_unit_vector_jax(key1)
-    near_zero = jnp.linalg.norm(diffuse_scatter) < 1e-8
-    diffuse_scatter = jnp.where(near_zero, normal, diffuse_scatter)
-    
-    # Metal reflection
-    reflected = reflect(normalize(ray_direction), normal)
-    metal_scatter = reflected + fuzz * random_unit_vector_jax(key1)
-    
-    # Glass refraction/reflection
-    # Determine if ray is entering or leaving the glass
-    front_face = jnp.dot(ray_direction, normal) < 0
-    outward_normal = jnp.where(front_face, normal, -normal)
+def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids, material_data, rng_key, depth=0, max_depth=10):
+  """Ray tracing with diffuse, metal, and glass materials"""
+  if depth >= max_depth:
+      return jnp.array([0.0, 0.0, 0.0])
+  
+  hit, t, p, normal, material_id = scene_intersect(ray_origin, ray_direction, centers, radii, material_ids)
+  
+  material_type = material_data['types'][material_id]
+  albedo = material_data['albedos'][material_id]
+  fuzz = material_data['fuzz'][material_id]
+  refractive_index = material_data['refractive_indices'][material_id]
+  
+  # Split into more keys to avoid reuse
+  key_diffuse, key_metal, key_glass_reflect, key_glass_random, key_recursive = jax.random.split(rng_key, 5)
+  
+  # Diffuse scattering - use dedicated key
+  diffuse_scatter = normal + random_unit_vector_jax(key_diffuse)
+  near_zero = jnp.linalg.norm(diffuse_scatter) < 1e-8
+  diffuse_scatter = jnp.where(near_zero, normal, diffuse_scatter)
+  
+  # Metal reflection - use different key
+  reflected = reflect(normalize(ray_direction), normal)
+  metal_scatter = reflected + fuzz * random_unit_vector_jax(key_metal)
+  
+  # Glass refraction/reflection
+  front_face = jnp.dot(ray_direction, normal) < 0
+  outward_normal = jnp.where(front_face, normal, -normal)
+  eta_ratio = jnp.where(front_face, 1.0 / refractive_index, refractive_index)
+  
+  unit_direction = normalize(ray_direction)
+  cos_theta = jnp.minimum(-jnp.dot(unit_direction, outward_normal), 1.0)
+  sin_theta = jnp.sqrt(1.0 - cos_theta * cos_theta)
+  
+  cannot_refract = eta_ratio * sin_theta > 1.0
+  
+  # Use dedicated key for glass random decision
+  should_reflect = cannot_refract | (jax.random.uniform(key_glass_random) < reflectance(cos_theta, eta_ratio))
+  
+  refracted_direction = refract(unit_direction, outward_normal, eta_ratio)
+  reflected_direction = reflect(unit_direction, outward_normal)
+  
+  glass_scatter = jnp.where(should_reflect, reflected_direction, refracted_direction)
+  
+  # Choose scatter direction based on material type
+  scatter_direction = jnp.where(
+      material_type == 0, diffuse_scatter,
+      jnp.where(material_type == 1, metal_scatter, glass_scatter)
+  )
+  
+  # Check absorption for metals
+  metal_absorbed = (material_type == 1) & (jnp.dot(metal_scatter, normal) <= 0)
+  
+  ray_offset_normal = jnp.where(
+      (material_type == 2) & ~should_reflect,  # Glass refraction
+      -outward_normal,  # Offset into the material
+      outward_normal    # Offset away from surface
+  )
 
-    eta_ratio = jnp.where(front_face, 1.0 / refractive_index, refractive_index)
-    
-    unit_direction = normalize(ray_direction)
-    cos_theta = jnp.minimum(-jnp.dot(unit_direction, outward_normal), 1.0)
-    sin_theta = jnp.sqrt(1.0 - cos_theta * cos_theta)
-    
-    # Check for total internal reflection
-    cannot_refract = eta_ratio * sin_theta > 1.0
-    
-    # Fresnel reflectance
-    should_reflect = cannot_refract | (jax.random.uniform(key2) < reflectance(cos_theta, eta_ratio))
-    
-    # Calculate refracted direction
-    refracted_direction = refract(unit_direction, outward_normal, eta_ratio)
-    reflected_direction = reflect(unit_direction, outward_normal)
-    
-    # Choose between reflection and refraction for glass
-    glass_scatter = jnp.where(
-        should_reflect,
-        reflected_direction,
-        refracted_direction
-    )
-    
-    # Choose scatter direction based on material type
-    scatter_direction = jnp.where(
-        material_type == 0, diffuse_scatter,
-        jnp.where(material_type == 1, metal_scatter, glass_scatter)
-    )
-    
-    # Check absorption for metals
-    metal_absorbed = (material_type == 1) & (jnp.dot(metal_scatter, normal) <= 0)
-    
-    
-    ray_offset_normal = jnp.where(
-    (material_type == 2) & ~should_reflect,  # Glass refraction
-    -outward_normal,  # Offset into the material
-    outward_normal    # Offset away from surface
-    )
-
-    bounced_color = ray_color_materials(
-        p + 1e-6 * ray_offset_normal, scatter_direction,
-        centers, radii, material_ids, material_data,
-        key3, depth + 1, max_depth
-    )
-    
-    # Sky background
-    unit_direction_sky = normalize(ray_direction)
-    a = 0.5 * (unit_direction_sky[1] + 1.0)
-    sky_color = (1.0 - a) * jnp.array([1.0, 1.0, 1.0]) + a * jnp.array([0.5, 0.7, 1.0])
-    
-    # Calculate final color
-    # Glass materials don't attenuate (albedo = [1,1,1])
-    material_albedo = jnp.where(material_type == 2, jnp.array([1.0, 1.0, 1.0]), albedo)
-    sphere_color = material_albedo * bounced_color
-    
-    # Handle metal absorption
-    sphere_color = jnp.where(metal_absorbed, jnp.array([0.0, 0.0, 0.0]), sphere_color)
-    
-    return jnp.where(hit, sphere_color, sky_color)
+  # Use dedicated key for recursive call
+  bounced_color = ray_color_materials(
+      p + 0.001 * ray_offset_normal, scatter_direction,
+      centers, radii, material_ids, material_data,
+      key_recursive, depth + 1, max_depth
+  )
+  
+  # Sky background
+  unit_direction_sky = normalize(ray_direction)
+  a = 0.5 * (unit_direction_sky[1] + 1.0)
+  sky_color = (1.0 - a) * jnp.array([1.0, 1.0, 1.0]) + a * jnp.array([0.5, 0.7, 1.0])
+  
+  # Calculate final color
+  material_albedo = jnp.where(material_type == 2, jnp.array([1.0, 1.0, 1.0]), albedo)
+  sphere_color = material_albedo * bounced_color
+  
+  # Handle metal absorption
+  sphere_color = jnp.where(metal_absorbed, jnp.array([0.0, 0.0, 0.0]), sphere_color)
+  
+  return jnp.where(hit, sphere_color, sky_color)
 ```
 
 Now we can render a four-sphere scene (three balls + the ground) with all different materials. The left glass sphere is an air bubble, the middle is a diffuse sphere, and the right is a metal sphere -- just like the Ray Tracer tutorial.
@@ -711,14 +702,14 @@ jnp.sqrt(jnp.clip(linear_color, 0.0, 1.0))
 With `max_depth = 10` and `samples_per_pixel = 12`: 
 
 <div class="align-center">
-    <img src="/public/jax/compare.png" width ="300px"/>
+    <img src="/public/jax/compare.png" width ="400px"/>
 </div>
 
 
-With `max_depth = 10` and `samples_per_pixel = 500` after gamma correction:
+With `max_depth = 10` and `samples_per_pixel = 500` after gamma correction... VOILA!!
 
 <div class="align-center">
-    <img src="/public/jax/gamma.png"/>
+    <img src="/public/jax/gamma.png"  width ="600px"/>
 </div>
 
 Subsequent renders are fast because JAX caches the JIT-compiled functions. As long as you keep the same image dimensions (static arguments), changing camera position, materials, or scene geometry doesn't trigger recompilation - JAX reuses the optimized machine code. 
