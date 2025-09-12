@@ -715,7 +715,9 @@ Subsequent renders are fast because JAX caches the JIT-compiled functions. As lo
   <div style="text-align: center;">
     <img src="/public/jax/top.png" style="width: 100%; height: auto; border-radius: 8px;">
   </div>
-
+  <div style="text-align: center;">
+    <img src="/public/jax/front.png" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
 </div>
 
 Speed comes from: (a) No recompilation for non-static argument changes, (b) Vectorized operations processing millions of rays in parallel, and (c) XLA optimizations like operation fusion and memory layout optimization. 

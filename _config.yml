@@ -39,3 +39,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+kramdown:
+  syntax_highlighter_opts:
+    css_class: 'highlight'

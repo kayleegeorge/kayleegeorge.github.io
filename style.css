@@ -114,3 +114,19 @@ code {
   font-size: 14px;
   color: #333;
 }
+
+/* PYTHON SYNTAX HIGHLIGHTING */
+
+.highlight .k { color: #0000ff; font-weight: bold; } /* Keywords (def, if, etc.) */
+.highlight .kn { color: #0000ff; font-weight: bold; } /* Keyword namespaces (import) */
+.highlight .s { color: #008000; } /* Strings */
+.highlight .s1 { color: #008000; } /* Single quoted strings */
+.highlight .s2 { color: #008000; } /* Double quoted strings */
+.highlight .nf { color: #0000ff; } /* Function names */
+.highlight .nb { color: #008080; } /* Built-ins (print, len, etc.) */
+.highlight .c { color: #808080; font-style: italic; } /* Comments */
+.highlight .c1 { color: #808080; font-style: italic; } /* Single line comments */
+.highlight .nn { color: #0000ff; font-weight: bold; } /* Namespaces */
+.highlight .bp { color: #008080; } /* Built-in pseudo (self) */
+.highlight .mi { color: #ff0000; } /* Numbers */
+.highlight .o { color: #666666; } /* Operators */
