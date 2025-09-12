@@ -5,15 +5,17 @@ date: 2025-09-11
 permalink: /blog/jax-ray-tracer/
 ---
 
-Last year, I implemented this [Ray Tracing tutorial](https://raytracing.github.io/books/RayTracingInOneWeekend.html) in [Rust](https://github.com/kayleegeorge/ray-tracer) but the rendering was painfully slow on my machine. 
+<div class="align-center">
+    <img src="/public/jax/gamma.png"  width ="600px"/>
+</div>
 
-Instead of adding parallelization to my Rust code, I decided to rewrite my ray tracer again in JAX to get really good performance gains without too much effort.
+Last year, I implemented the [Ray Tracing in One Weekend tutorial](https://raytracing.github.io/books/RayTracingInOneWeekend.html) in [Rust](https://github.com/kayleegeorge/ray-tracer) but the rendering was painfully slow on my machine. Instead of adding parallelization to my Rust code, I decided to rewrite my ray tracer again in JAX to get really good performance gains without too much effort.
 
 Ray tracing is an ideal JAX application: it's computationally intensive but parallel (each pixel is independent), mathematically heavy (lots of vector operations and intersections), and benefits enormously from differentiation for techniques like inverse rendering and neural radiance fields. The pure function nature of ray tracing algorithms (i.e. given a ray and scene, it always produces the same color) also aligns well with JAX's constraints.
 
-This tutorial has four parts (each covers a few chapters from the Ray Tracing in One Weekend) and ultimately builds up to the iconic Ray Tracer image. I also made the code available in this [Colab](https://colab.research.google.com/drive/1A5afhu5yGbXSaUFWWFPHotGMWy6Ao1DN?usp=sharing) if you want to follow along there or make any modifications/extensions.
+This guide has four parts and ultimately builds up to the iconic Ray Tracer image you see above. I didn't go _super_ in-depth into all the math/intuition behind each function because it's all covered in the OG Ray Tracing tutorial, but I tried to map which chapters map to what section. If you want to follow along with runnable code (or make any modifications/extensions), I put it all in this [Colab](https://colab.research.google.com/drive/1A5afhu5yGbXSaUFWWFPHotGMWy6Ao1DN?usp=sharing).
 
-_*Note: There are some parts in this post where I skip over going through certain redundant code snippets — particularly whenever I need to use a new `trace_pixel` or `render` function. You can see the full implementations in Colab._
+_*Note: There are some parts in this post where I skip over going through certain redundant code snippets — particularly whenever I need to make a slightly different `trace_pixel` or `render` function. You can see the full implementations in Colab._
 
 <br/>
 
@@ -77,9 +79,7 @@ if discriminant < 0.0 {
 }
 ```
 
-But JAX needs to trace through your entire function to understand the computation graph. Early returns create *dynamic control flow* that depend on runtime, which JAX can't compile efficiently or differentiate through. Thus, we always do computation but use `jnp.where()` to mask the results based on the `hit` condition.
-
-_*Note: The calculations for the quadratic equation coefficients are simplified: math [here](https://raytracing.github.io/books/RayTracingInOneWeekend.html#surfacenormalsandmultipleobjects/simplifyingtheray-sphereintersectioncode)._
+But JAX needs to trace through your entire function to understand the computation graph. Early returns create *dynamic control flow* that depend on runtime, which JAX can't compile efficiently or differentiate through. Thus, we always do computation but use `jnp.where()` to mask the results based on the `hit` condition. _*Note: The calculations for the quadratic equation coefficients in the code implementation are simplified: math [here](https://raytracing.github.io/books/RayTracingInOneWeekend.html#surfacenormalsandmultipleobjects/simplifyingtheray-sphereintersectioncode)._
 
 Another example of this `jnp.where()` JAX hack is root calculation, e.g. the orignal Rust implementation:
 
@@ -280,11 +280,9 @@ _Roughly covers the rest of Ch. 6: Multiple Objects and [Ch. 9: Diffuse material
 
 ### Multiple Objects
 
-Now we need to extend our ray tracer to handle a scene with multiple spheres, not just one.
+Now we need to extend our one-sphere-wonder ray tracer to handle a scene with multiple spheres.
 
-Traditional ray tracers loop through each sphere sequentially (i.e. test sphere 1, then sphere 2, then sphere 3) until you find the closest hit. However, JAX offers massive speedups by testing all spheres simultaneously with `vmap`, then find the minimum distance. Whether you have 5 spheres or 500, it's still just one parallel operation.
-
-The performance difference becomes dramatic as scenes get more complex. Instead of `O(n)` sequential tests, JAX gives you `O(1)` parallel intersection testing across your entire scene.
+Traditional ray tracers loop through each sphere sequentially (i.e. test sphere 1, then sphere 2, then sphere 3) until you find the closest hit. However, JAX offers massive speedups by testing all spheres simultaneously with `vmap`, then find the minimum distance. Whether you have 5 spheres or 500, it's still just one parallel operation — meaning the performance difference is quite noticeable as scenes get more complex.
 
 ```python
 def scene_intersect(ray_origin, ray_direction, centers, radii, material_ids):
@@ -331,11 +329,9 @@ The caveat here is that random functions consume the key but don't modify it: if
 
 Additionally:
 
-> JAX uses a modern [Threefry counter-based PRNG](https://github.com/jax-ml/jax/blob/main/docs/jep/263-prng.md) that’s splittable. That is, its design allows us to fork the PRNG state into new PRNGs for use with parallel stochastic generation. In order to generate different and independent samples, you must split() the key explicitly before passing it to a random function. jax.random.split() is a deterministic function that converts one key into several independent (in the pseudorandomness sense) keys.
+> "JAX uses a modern [Threefry counter-based PRNG](https://github.com/jax-ml/jax/blob/main/docs/jep/263-prng.md) that’s splittable. That is, its design allows us to fork the PRNG state into new PRNGs for use with parallel stochastic generation. In order to generate different and independent samples, you must split() the key explicitly before passing it to a random function. jax.random.split() is a deterministic function that converts one key into several independent (in the pseudorandomness sense) keys." _Read more [here](https://docs.jax.dev/en/latest/random-numbers.html)._
 
 We use `jax.random.split` to ensure reproducible results while maintaining the mathematical purity that enables vectorization. Traditional imperative random number generators would break JAX's ability to parallelize across pixels.
-
-_Read more [here](https://docs.jax.dev/en/latest/random-numbers.html)._
 
 ```python
 def random_unit_vector_jax(rng_key):
@@ -565,7 +561,7 @@ def reflectance(cosine, ref_idx):
 
 Each material type requires different physics calculations, random decisions, and careful normal vector handling (especially for glass, where rays can enter or exit the material). 
 
-Unfortunately, JAX's constraints for dynamic control flow means the `jnp.where` conditionals get a bit gnarly in terms of readability...
+Unfortunately, JAX's constraints for dynamic control flow means the `jnp.where` conditionals get a bit gnarly in terms of readability (not to mention the PNRG key mangement)...
 
 ```python
 def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids, material_data, rng_key, depth=0, max_depth=10):
@@ -580,15 +576,15 @@ def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids,
   fuzz = material_data['fuzz'][material_id]
   refractive_index = material_data['refractive_indices'][material_id]
   
-  # Split into more keys to avoid reuse
+  # Split into many keys to avoid reuse 
   key_diffuse, key_metal, key_glass_reflect, key_glass_random, key_recursive = jax.random.split(rng_key, 5)
   
-  # Diffuse scattering - use dedicated key
+  # Diffuse scattering 
   diffuse_scatter = normal + random_unit_vector_jax(key_diffuse)
   near_zero = jnp.linalg.norm(diffuse_scatter) < 1e-8
   diffuse_scatter = jnp.where(near_zero, normal, diffuse_scatter)
   
-  # Metal reflection - use different key
+  # Metal reflection 
   reflected = reflect(normalize(ray_direction), normal)
   metal_scatter = reflected + fuzz * random_unit_vector_jax(key_metal)
   
@@ -603,7 +599,6 @@ def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids,
   
   cannot_refract = eta_ratio * sin_theta > 1.0
   
-  # Use dedicated key for glass random decision
   should_reflect = cannot_refract | (jax.random.uniform(key_glass_random) < reflectance(cos_theta, eta_ratio))
   
   refracted_direction = refract(unit_direction, outward_normal, eta_ratio)
@@ -617,7 +612,6 @@ def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids,
       jnp.where(material_type == 1, metal_scatter, glass_scatter)
   )
   
-  # Check absorption for metals
   metal_absorbed = (material_type == 1) & (jnp.dot(metal_scatter, normal) <= 0)
   
   ray_offset_normal = jnp.where(
@@ -626,23 +620,21 @@ def ray_color_materials(ray_origin, ray_direction, centers, radii, material_ids,
       outward_normal    # Offset away from surface
   )
 
-  # Use dedicated key for recursive call
   bounced_color = ray_color_materials(
       p + 0.001 * ray_offset_normal, scatter_direction,
       centers, radii, material_ids, material_data,
       key_recursive, depth + 1, max_depth
   )
   
-  # Sky background
+  # sky
   unit_direction_sky = normalize(ray_direction)
   a = 0.5 * (unit_direction_sky[1] + 1.0)
   sky_color = (1.0 - a) * jnp.array([1.0, 1.0, 1.0]) + a * jnp.array([0.5, 0.7, 1.0])
   
-  # Calculate final color
   material_albedo = jnp.where(material_type == 2, jnp.array([1.0, 1.0, 1.0]), albedo)
   sphere_color = material_albedo * bounced_color
   
-  # Handle metal absorption
+  # metal absorption
   sphere_color = jnp.where(metal_absorbed, jnp.array([0.0, 0.0, 0.0]), sphere_color)
   
   return jnp.where(hit, sphere_color, sky_color)
@@ -684,7 +676,7 @@ The JIT compiler creates highly optimized parallel code that can be scaled acros
 After making some new `trace_pixel()` and `render()` wrapper functions, we get: 
 
 <div class="align-center">
-    <img src="/public/jax/materials.png" width="700px"/>
+    <img src="/public/jax/materials.png" width="650px"/>
 </div>
 
 <br/>
@@ -693,13 +685,7 @@ After making some new `trace_pixel()` and `render()` wrapper functions, we get:
 
 Now it's time create the iconic final scene from the tutorial with lots and lots of spheres!! _(The details of `create_hella_balls_scene()` aren't really relevant -- the main point is that there are lots of balls with lots of different materials. I also had to implement some batching to get around the memory constraints.)_
 
-I added some simple gamma correction (gamma = 2.2, so we take square root for approximate 2.0) to the rendering pipeline for better coloring, which can be done using this line:
-
-```python
-jnp.sqrt(jnp.clip(linear_color, 0.0, 1.0))
-```
-
-With `max_depth = 10` and `samples_per_pixel = 12`: 
+I added some simple gamma correction (gamma = 2.2, so we take square root for approximate 2.0) to the rendering pipeline for better coloring, which can be done using this line: `jnp.sqrt(jnp.clip(linear_color, 0.0, 1.0))`. With `max_depth = 10` and `samples_per_pixel = 12`, here's a comparison of before and after gamma correction: 
 
 <div class="align-center">
     <img src="/public/jax/compare.png" width ="400px"/>
