@@ -373,11 +373,11 @@ def ray_color_diffuse(ray_origin, ray_direction, centers, radii, material_ids, m
   
   # Lambertian scattering
   key1, key2 = jax.random.split(rng_key)
-  scatter_direction = normal + random_unit_vector_jax(key1)
+  scatter_direction = normalize(normal + random_unit_vector_jax(key1)) 
 
   # Recursive bounce
   bounced_color = ray_color_diffuse(
-      p + 1e-6 * normal, scatter_direction, centers, radii, material_ids, material_albedos, key2, depth + 1, max_depth
+      p + 0.001 * normal, scatter_direction, centers, radii, material_ids, material_albedos, key2, depth + 1, max_depth
   )
   
   # Sky color
@@ -448,25 +448,16 @@ def create_positionable_camera(image_width, image_height, vfov, lookfrom, lookat
 
 ```python
 def random_in_unit_disk_jax(key):
-    """Generate a random point in the unit disk using rejection sampling"""
-    def body_fn(carry):
-        key, _ = carry
-        key, subkey = jax.random.split(key)
-        # Generate random point in [-1,1] x [-1,1] square
-        p = jax.random.uniform(subkey, (2,), minval=-1.0, maxval=1.0)
-        # Check if it's in the unit circle
-        length_squared = jnp.dot(p, p)
-        return key, (p, length_squared)
+     """Fixed random point in unit disk"""
+    # Generate random angle and radius
+    key1, key2 = jax.random.split(key, 2)
+    angle = jax.random.uniform(key1, minval=0.0, maxval=2.0 * jnp.pi)
+    r = jnp.sqrt(jax.random.uniform(key2, minval=0.0, maxval=1.0))  # sqrt for uniform distribution
     
-    def cond_fn(carry):
-        _, (p, length_squared) = carry
-        return length_squared >= 1.0  # Continue while outside unit circle
-    
-    key, _ = jax.lax.while_loop(cond_fn, body_fn, (key, (jnp.zeros(2), 2.0)))
-    _, (p, _) = body_fn((key, None))
-    
-    # Return as 3D vector with z=0
-    return jnp.array([p[0], p[1], 0.0])
+    # Convert to cartesian
+    x = r * jnp.cos(angle)
+    y = r * jnp.sin(angle)
+    return jnp.array([x, y, 0.0]) 
 
 def defocus_disk_sample(key, camera_center, defocus_disk_u, defocus_disk_v):
     """Returns a random point in the camera defocus disk"""
@@ -709,32 +700,56 @@ After making some new `trace_pixel()` and `render()` wrapper functions, we get:
 
 ### A Final Render
 
-Now it's time create the iconic final scene from the tutorial with lots and lots of spheres!! _(The details of `create_hella_balls_scene()` aren't really relevant -- the main point is that there are lots of balls with lots of different materials)_
+Now it's time create the iconic final scene from the tutorial with lots and lots of spheres!! _(The details of `create_hella_balls_scene()` aren't really relevant -- the main point is that there are lots of balls with lots of different materials. I also had to implement some batching to get around the memory constraints.)_
 
-Viola!!
+I added some simple gamma correction (gamma = 2.2, so we take square root for approximate 2.0) to the rendering pipeline for better coloring, which can be done using this line:
+
+```python
+jnp.sqrt(jnp.clip(linear_color, 0.0, 1.0))
+```
+
+With `max_depth = 10` and `samples_per_pixel = 12`: 
 
 <div class="align-center">
-    <img src="/public/jax/final.png"/>
+    <img src="/public/jax/compare.png" width ="300px"/>
 </div>
 
-Subsequent renders are fast because JAX caches the JIT-compiled functions. As long as you keep the same image dimensions (static arguments), changing camera position, materials, or scene geometry doesn't trigger recompilation - JAX reuses the optimized machine code:
+
+With `max_depth = 10` and `samples_per_pixel = 500` after gamma correction:
+
+<div class="align-center">
+    <img src="/public/jax/gamma.png"/>
+</div>
+
+Subsequent renders are fast because JAX caches the JIT-compiled functions. As long as you keep the same image dimensions (static arguments), changing camera position, materials, or scene geometry doesn't trigger recompilation - JAX reuses the optimized machine code. 
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 800px; margin: 20px auto;">
   <div style="text-align: center;">
-    <img src="/public/jax/first_render.png" style="width: 100%; height: auto; border-radius: 8px;">
+    <img src="/public/jax/v1.png" style="width: 100%; height: auto; border-radius: 8px;">
   </div>
   <div style="text-align: center;">
-    <img src="/public/jax/another.png" style="width: 100%; height: auto; border-radius: 8px;">
+    <img src="/public/jax/v2.png" style="width: 100%; height: auto; border-radius: 8px;">
   </div>
   <div style="text-align: center;">
-    <img src="/public/jax/top.png" style="width: 100%; height: auto; border-radius: 8px;">
+    <img src="/public/jax/v3.png" style="width: 100%; height: auto; border-radius: 8px;">
   </div>
   <div style="text-align: center;">
-    <img src="/public/jax/front.png" style="width: 100%; height: auto; border-radius: 8px;">
+    <img src="/public/jax/v4.png" style="width: 100%; height: auto; border-radius: 8px;">
   </div>
 </div>
 
-Speed comes from: (a) No recompilation for non-static argument changes, (b) Vectorized operations processing millions of rays in parallel, and (c) XLA optimizations like operation fusion and memory layout optimization. 
+Speed comes from: (a) no recompilation for non-static argument changes, (b) vectorized operations processing millions of rays in parallel, and (c) XLA optimizations like operation fusion and memory layout optimization. 
+
+For reference, these image generated in Rust on my machine took 1244.58 seconds (a little over 20 minutes) and 1236.66 seconds. The first had `max_depth=20` and the second was `max_depth=10` (both `samples_per_pixel = 500`). (_The Rust version looks slightly different, maybe a bit more "high quality", but I think it's just due to some small implementation details like PNRG and different epsilon calculations_.)
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-width: 800px; margin: 20px auto;">
+  <div style="text-align: center;">
+    <img src="/public/jax/rust.png" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+  <div style="text-align: center;">
+    <img src="/public/jax/rust2.png" style="width: 100%; height: auto; border-radius: 8px;">
+  </div>
+</div>
 
 _Again if you want to play around for yourself, [here](https://colab.research.google.com/drive/1A5afhu5yGbXSaUFWWFPHotGMWy6Ao1DN?usp=sharing) is the Colab!_
 
