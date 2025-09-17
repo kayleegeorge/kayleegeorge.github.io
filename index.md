@@ -32,7 +32,7 @@ play with [words](https://kleerants.substack.com).
 - [Daimo](https://github.com/daimo-eth/daimo): a stablecoin payments app ("Venmo for crypto"); built an [indexer](https://daimo.super.site/blog/less-terrible-ethereum-indexing).
 - [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
 - [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
-- ClaudeRed: LLM blue-team vs. red-team game (Anthropic London Hackathon fall '23 Finalist, solo).
+- [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon fall '23 Finalist, solo).
 - [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers fall '23 Winner, solo).
 - [Nozee](https://github.com/emmaguo13/zk-blind): ZK Blind using JWTs + ZK Email (Hack Lodge winter '23, team).
 - [Proactive Refresh](https://github.com/lyronctk/proactive-refresh): Proactive refresh for accountable threshold signatures (TreeHacks '23 grand prize winner, team).

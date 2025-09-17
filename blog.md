@@ -27,3 +27,5 @@ Shorter musings.
 [AI Prediction Markets](/blog/ai-prediction-markets/) | _Oct 2024_
 
 [Attested Images](/blog/postcard) | _May 2024_ 
+
+[On having an adversarial mindset](/blog/claudered) | _Nov 2023_
