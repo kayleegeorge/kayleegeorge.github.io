@@ -7,9 +7,8 @@ layout: home
 I was most recently a member of technical staff at [/dev/agents](https://sdsa.ai). Before that, I worked on 
 open-source crypto at [Daimo](https://github.com/daimo-eth/daimo) (self-custodial stablecoin wallet & 
 seamless cross-chain payments) and at an applied cryptography residency in Osaka, Japan. 
-I interned at Discord (platform security), Uniswap Labs, [Microsoft](https://www.reddit.com/r/gifs/comments/2iy3wn/bill_gates_jumps_over_a_chair/) (Microsoft
-Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I'm an angel investor in [Succinct Labs](https://www.succinct.xyz/)
-and Applied Compute Inc.
+I interned at Discord (platform security), Uniswap Labs ([Explore](https://app.uniswap.org/explore)), [Microsoft](https://www.reddit.com/r/gifs/comments/2iy3wn/bill_gates_jumps_over_a_chair/) (Microsoft
+Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I'm an angel investor in [Succinct Labs](https://www.succinct.xyz/) and Applied Compute Inc.
 
 I studied Computer Science with a specialization in theory at [Stanford
 University](https://www.youtube.com/watch?v=XF7D7fSU--U). Some of my favorite classes were number theory
@@ -25,12 +24,12 @@ play with [words](https://kleerants.substack.com).
 
 <div class="spacer"></div>
 
-## Projects
 {: .subtitle}
 
-- [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
-- [Daimo](https://github.com/daimo-eth/daimo): a stablecoin payments app ("Venmo for crypto"); built an [indexer](https://daimo.super.site/blog/less-terrible-ethereum-indexing).
+## Projects & Research
+{: .subtitle}
 - [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
+- [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
 - [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
 - [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon fall '23 Finalist, solo).
 - [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers fall '23 Winner, solo).
@@ -39,8 +38,6 @@ play with [words](https://kleerants.substack.com).
 - [learn.0xparc.org](https://learn.0xparc.org/): contributed to 0xPARC's ZK learning materials.
 - [Groth16 Math](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/math110_WIM.pdf): Number Theory for Cryptography final paper (Stanford, winter '22).
 - [Crypto Twitter Linguistics](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/Ling130A_Final_Report_.pdf): Semantics & Pragmatics final paper (Stanford, winter '22).
-
-{: .bullets}
 
 <div class="spacer"></div>
 
