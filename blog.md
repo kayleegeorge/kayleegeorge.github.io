@@ -14,7 +14,7 @@ Shorter musings.
 
 [Ray Tracing in JAX](/blog/jax-ray-tracer) | _Sept 2025_
 
-[A Short Intro to JAX](/blog/jax-intro) | _Sept 2025_
+[Pre-read: A Short Intro to JAX](/blog/jax-intro) | _Sept 2025_
 
 [Labubus & AI Editors](/blog/ai-editors) | _Sept 2025_
 
