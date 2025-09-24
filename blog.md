@@ -12,6 +12,8 @@ Shorter musings.
 
 --
 
+[Crypto for the uninitiated](/blog/crypto-uninitiated) | _Sept 2025_
+
 [Ray Tracing in JAX](/blog/jax-ray-tracer) | _Sept 2025_
 
 [Pre-read: A Short Intro to JAX](/blog/jax-intro) | _Sept 2025_
