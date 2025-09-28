@@ -8,7 +8,7 @@ I was most recently a member of technical staff at [/dev/agents](https://sdsa.ai
 open-source crypto at [Daimo](https://github.com/daimo-eth/daimo) (self-custodial stablecoin wallet & 
 seamless cross-chain payments) and at an applied cryptography residency in Osaka, Japan. 
 I interned at Discord (platform security), Uniswap Labs ([Explore](https://app.uniswap.org/explore)), [Microsoft](https://www.reddit.com/r/gifs/comments/2iy3wn/bill_gates_jumps_over_a_chair/) (Microsoft
-Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I'm an angel investor in [Succinct Labs](https://www.succinct.xyz/) and Applied Compute Inc.
+Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I occasionally angel invest in friends ([Succinct Labs](https://www.succinct.xyz/), Applied Compute Inc.).
 
 I studied Computer Science with a specialization in theory at [Stanford
 University](https://www.youtube.com/watch?v=XF7D7fSU--U). Some of my favorite classes were number theory
@@ -26,18 +26,19 @@ play with [words](https://kleerants.substack.com).
 
 {: .subtitle}
 
-## Projects & Research
+## Honors / Projects / Research
 {: .subtitle}
-- [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
-- [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
-- [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
-- [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon fall '23 Finalist, solo).
-- [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers fall '23 Winner, solo).
-- [Nozee](https://github.com/emmaguo13/zk-blind): ZK Blind using JWTs + ZK Email (Hack Lodge winter '23, team).
-- [Proactive Refresh](https://github.com/lyronctk/proactive-refresh): Proactive refresh for accountable threshold signatures (TreeHacks '23 grand prize winner, team).
-- [learn.0xparc.org](https://learn.0xparc.org/): contributed to 0xPARC's ZK learning materials.
-- [Groth16 Math](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/math110_WIM.pdf): Number Theory for Cryptography final paper (Stanford, winter '22).
-- [Crypto Twitter Linguistics](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/Ling130A_Final_Report_.pdf): Semantics & Pragmatics final paper (Stanford, winter '22).
+- Sept 2025: [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
+- Sept 2024: [Paradigm](https://fellowship.paradigm.xyz/) fellow.
+- April 2024: [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
+- Feb/May 2024: [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
+- Dev 2023: [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers Winner, solo).
+- Nov 2023: [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon Finalist, solo).
+- Feb 2023: [Proactive Refresh](https://github.com/lyronctk/proactive-refresh): Proactive refresh for accountable threshold signatures (TreeHacks grand prize winner).
+- Jan 2023: [Nozee](https://github.com/emmaguo13/zk-blind): ZK Blind using JWTs + ZK Email (Hack Lodge).
+- Late 2022 - early 2023: [learn.0xparc.org](https://learn.0xparc.org/): contributed to 0xPARC's ZK learning materials.
+- Dec 2022: [Groth16 Math](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/math110_WIM.pdf): Number Theory for Cryptography final paper (Stanford).
+- May 2022: [Crypto Twitter Linguistics](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/Ling130A_Final_Report_.pdf): Semantics & Pragmatics final paper (Stanford).
 
 <div class="spacer"></div>
 
