@@ -33,3 +33,5 @@ Shorter musings.
 [Attested Images](/blog/postcard) | _May 2024_ 
 
 [On having an adversarial mindset](/blog/claudered) | _Nov 2023_
+
+[Tab Essay](/blog/tabs) | _Oct 2018_

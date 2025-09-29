@@ -8,7 +8,7 @@ I was most recently a member of technical staff at [/dev/agents](https://sdsa.ai
 open-source crypto at [Daimo](https://github.com/daimo-eth/daimo) (self-custodial stablecoin wallet & 
 seamless cross-chain payments) and at an applied cryptography residency in Osaka, Japan. 
 I interned at Discord (platform security), Uniswap Labs ([Explore](https://app.uniswap.org/explore)), [Microsoft](https://www.reddit.com/r/gifs/comments/2iy3wn/bill_gates_jumps_over_a_chair/) (Microsoft
-Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I occasionally angel invest in friends ([Succinct Labs](https://www.succinct.xyz/), Applied Compute Inc.).
+Search, Assistant and Intelligence), Tesla, and DreamBox Learning. I occasionally angel invest in friends like [Succinct Labs](https://www.succinct.xyz/) and Applied Compute Inc.
 
 I studied Computer Science with a specialization in theory at [Stanford
 University](https://www.youtube.com/watch?v=XF7D7fSU--U). Some of my favorite classes were number theory
