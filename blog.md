@@ -8,9 +8,11 @@ permalink: /blog/
 # Writings
 {: .blog-header}
 
-Shorter musings. 
+Shorter musings & technical explorations. 
 
 --
+
+[Generative worlds](/blog/generative-worlds) | _Oct 2025_
 
 [Crypto for the uninitiated](/blog/crypto-uninitiated) | _Sept 2025_
 
