@@ -18,9 +18,9 @@ development through drawings](https://twitter.com/hollyahuey/status/155211883796
 Lab](http://langcog.stanford.edu/index.html).
 
 I will go great lengths for good [food](https://www.reading-f.com/magazine-f-kimchi/) and [coffee](https://www.thecoffeemovement.com/).
-I also enjoy running, [dancing](https://www.youtube.com/watch?v=LcfL6i2cgRI&t=89s),
-camping, and [cooking](https://kleerants.substack.com/p/farmers-markets-and-forks-s2e7). I occasionally
-play with [words](https://kleerants.substack.com).
+I ran my first marathon in April 2024 (Big Sur), danced on [Alliance](https://www.youtube.com/watch?v=LcfL6i2cgRI&t=89s) (Stanford hip-hop team),
+camping and hiking (solo-ed [Kumano Kodo](https://www.tb-kumano.jp/en/kumano-kodo/) in May 2024), and [cooking](https://kleerants.substack.com/p/farmers-markets-and-forks-s2e7). I occasionally
+play with [words](https://kleerants.substack.com) about slices of my life.
 
 <div class="spacer"></div>
 
@@ -28,26 +28,26 @@ play with [words](https://kleerants.substack.com).
 
 ## Honors / Projects / Research
 {: .subtitle}
-- Sept 2025: [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
-- Sept 2024: [Paradigm](https://fellowship.paradigm.xyz/) fellow.
-- April 2024: [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
-- Feb/May 2024: [Postcard](/blog/postcard): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
-- Dev 2023: [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers Winner, solo).
-- Nov 2023: [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon Finalist, solo).
-- Feb 2023: [Proactive Refresh](https://github.com/lyronctk/proactive-refresh): Proactive refresh for accountable threshold signatures (TreeHacks grand prize winner).
-- Jan 2023: [Nozee](https://github.com/emmaguo13/zk-blind): ZK Blind using JWTs + ZK Email (Hack Lodge).
-- Late 2022 - early 2023: [learn.0xparc.org](https://learn.0xparc.org/): contributed to 0xPARC's ZK learning materials.
-- Dec 2022: [Groth16 Math](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/math110_WIM.pdf): Number Theory for Cryptography final paper (Stanford).
-- May 2022: [Crypto Twitter Linguistics](https://github.com/kayleegeorge/kayleegeorge.github.io/blob/master/Ling130A_Final_Report_.pdf): Semantics & Pragmatics final paper (Stanford).
+
+_See [writings](/blog) for more._
+
+
+[Sept 2025] [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
+
+[Sept 2024] [Paradigm](https://fellowship.paradigm.xyz/) fellow.
+
+[April 2024] [EthReceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
+
+[Feb/May 2024] [Postcard](/blog/postcard): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using [SP1](https://github.com/succinctlabs/sp1) (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
+
+[Dev 2023] [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers Winner, solo).
+
+[Nov 2023] [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon Finalist, solo).
+
+[Feb 2023] [Proactive Refresh](https://github.com/lyronctk/proactive-refresh): Proactive refresh for accountable threshold signatures (TreeHacks Most Technical Grand Prize winner).
+
+[Jan 2023] [Nozee](https://github.com/emmaguo13/zk-blind): ZK Blind using JWTs + ZK Email (Hack Lodge).
+
+[Dec 2022] Contributed to 0xPARC's ZK learning materials [learn.0xparc.org](https://learn.0xparc.org/).
 
 <div class="spacer"></div>
-
-## Misc
-{: .subtitle}
-
-- Staged for a day at [Chez Panisse](https://en.wikipedia.org/wiki/Chez_Panisse)
-- Experimenting with kimchi & sauerkraut fermentation
-- Ran my first marathon, Big Sur International in April 2024
-- Solo hiked along the [Kumano Kodo](https://www.tb-kumano.jp/en/kumano-kodo/) in May 2024
-
-{: .bullets}

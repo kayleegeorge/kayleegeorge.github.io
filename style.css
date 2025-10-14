@@ -43,6 +43,16 @@ a:visited {
   gap: 3px;
 }
 
+ul {
+  margin: 0;
+  padding-left: 32px;
+  line-height: 1.2;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
 .spacer {
   height: 18px;
 }
