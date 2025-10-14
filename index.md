@@ -31,7 +31,7 @@ play with [words](https://kleerants.substack.com).
 - Sept 2025: [Labubu Bunch](/blog/ai-editors): a novel consumer app for brands to rapidly experiment and iterate on new assets or product lines (Gemini's Nano Banana hackathon, 4th place).
 - Sept 2024: [Paradigm](https://fellowship.paradigm.xyz/) fellow.
 - April 2024: [Ethreceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
-- Feb/May 2024: [Postcard](https://github.com/Sofianel5/onchain-appattest): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
+- Feb/May 2024: [Postcard](/blog/postcard): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using SP1 (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
 - Dev 2023: [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers Winner, solo).
 - Nov 2023: [ClaudeRed](/blog/claudered): LLM blue-team vs. red-team game (Anthropic London Hackathon Finalist, solo).
 - Feb 2023: [Proactive Refresh](https://github.com/lyronctk/proactive-refresh): Proactive refresh for accountable threshold signatures (TreeHacks grand prize winner).
