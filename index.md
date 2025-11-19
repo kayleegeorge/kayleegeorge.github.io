@@ -38,7 +38,7 @@ _See [writings](/blog) for more._
 
 [April 2024] [EthReceipts](https://github.com/daimo-eth/ethreceipts): simple receipts for Ethereum events, aka user-friendly Etherscan.
 
-[Feb/May 2024] [Postcard](/blog/postcard): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using [SP1](https://github.com/succinctlabs/sp1) (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/kayrgeorge/status/1798832124373639500) w/ Sofiane).
+[Feb/May 2024] [Postcard](/blog/postcard): iPhone attested images app using on-chain client authenticity attestation + ZK image manipulation library in Rust using [SP1](https://github.com/succinctlabs/sp1) (TreeHacks '24 Best ZK Hack + Most Creative On-Chain hack; cont. work at [Signature Singularity Residency](https://x.com/krgeorge/status/1798832124373639500) w/ Sofiane).
 
 [Dev 2023] [aiPass](https://github.com/kayleegeorge/aipass): "MetaMask for AI", bring your own key wallet & SDK (HackHers Winner, solo).
 
